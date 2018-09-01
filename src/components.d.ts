@@ -12,62 +12,101 @@ import 'ionicons';
 
 export namespace Components {
 
-  interface AppHome {}
-  interface AppHomeAttributes extends StencilHTMLAttributes {}
+  interface SlLearningCenter {}
+  interface SlLearningCenterAttributes extends StencilHTMLAttributes {}
 
-  interface AppProfile {
-    'name': string;
+  interface SlCourse {
+    'courseSlug': string;
   }
-  interface AppProfileAttributes extends StencilHTMLAttributes {
-    'name'?: string;
+  interface SlCourseAttributes extends StencilHTMLAttributes {
+    'courseSlug'?: string;
   }
 
-  interface AppRoot {}
-  interface AppRootAttributes extends StencilHTMLAttributes {}
+  interface SlCourses {}
+  interface SlCoursesAttributes extends StencilHTMLAttributes {}
+
+  interface SlWelcome {}
+  interface SlWelcomeAttributes extends StencilHTMLAttributes {}
+
+  interface SlApp {}
+  interface SlAppAttributes extends StencilHTMLAttributes {}
+
+  interface SlStorefront {}
+  interface SlStorefrontAttributes extends StencilHTMLAttributes {}
 }
 
 declare global {
   interface StencilElementInterfaces {
-    'AppHome': Components.AppHome;
-    'AppProfile': Components.AppProfile;
-    'AppRoot': Components.AppRoot;
+    'SlLearningCenter': Components.SlLearningCenter;
+    'SlCourse': Components.SlCourse;
+    'SlCourses': Components.SlCourses;
+    'SlWelcome': Components.SlWelcome;
+    'SlApp': Components.SlApp;
+    'SlStorefront': Components.SlStorefront;
   }
 
   interface StencilIntrinsicElements {
-    'app-home': Components.AppHomeAttributes;
-    'app-profile': Components.AppProfileAttributes;
-    'app-root': Components.AppRootAttributes;
+    'sl-learning-center': Components.SlLearningCenterAttributes;
+    'sl-course': Components.SlCourseAttributes;
+    'sl-courses': Components.SlCoursesAttributes;
+    'sl-welcome': Components.SlWelcomeAttributes;
+    'sl-app': Components.SlAppAttributes;
+    'sl-storefront': Components.SlStorefrontAttributes;
   }
 
 
-  interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {}
-  var HTMLAppHomeElement: {
-    prototype: HTMLAppHomeElement;
-    new (): HTMLAppHomeElement;
+  interface HTMLSlLearningCenterElement extends Components.SlLearningCenter, HTMLStencilElement {}
+  var HTMLSlLearningCenterElement: {
+    prototype: HTMLSlLearningCenterElement;
+    new (): HTMLSlLearningCenterElement;
   };
 
-  interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {}
-  var HTMLAppProfileElement: {
-    prototype: HTMLAppProfileElement;
-    new (): HTMLAppProfileElement;
+  interface HTMLSlCourseElement extends Components.SlCourse, HTMLStencilElement {}
+  var HTMLSlCourseElement: {
+    prototype: HTMLSlCourseElement;
+    new (): HTMLSlCourseElement;
   };
 
-  interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {}
-  var HTMLAppRootElement: {
-    prototype: HTMLAppRootElement;
-    new (): HTMLAppRootElement;
+  interface HTMLSlCoursesElement extends Components.SlCourses, HTMLStencilElement {}
+  var HTMLSlCoursesElement: {
+    prototype: HTMLSlCoursesElement;
+    new (): HTMLSlCoursesElement;
+  };
+
+  interface HTMLSlWelcomeElement extends Components.SlWelcome, HTMLStencilElement {}
+  var HTMLSlWelcomeElement: {
+    prototype: HTMLSlWelcomeElement;
+    new (): HTMLSlWelcomeElement;
+  };
+
+  interface HTMLSlAppElement extends Components.SlApp, HTMLStencilElement {}
+  var HTMLSlAppElement: {
+    prototype: HTMLSlAppElement;
+    new (): HTMLSlAppElement;
+  };
+
+  interface HTMLSlStorefrontElement extends Components.SlStorefront, HTMLStencilElement {}
+  var HTMLSlStorefrontElement: {
+    prototype: HTMLSlStorefrontElement;
+    new (): HTMLSlStorefrontElement;
   };
 
   interface HTMLElementTagNameMap {
-    'app-home': HTMLAppHomeElement
-    'app-profile': HTMLAppProfileElement
-    'app-root': HTMLAppRootElement
+    'sl-learning-center': HTMLSlLearningCenterElement
+    'sl-course': HTMLSlCourseElement
+    'sl-courses': HTMLSlCoursesElement
+    'sl-welcome': HTMLSlWelcomeElement
+    'sl-app': HTMLSlAppElement
+    'sl-storefront': HTMLSlStorefrontElement
   }
 
   interface ElementTagNameMap {
-    'app-home': HTMLAppHomeElement;
-    'app-profile': HTMLAppProfileElement;
-    'app-root': HTMLAppRootElement;
+    'sl-learning-center': HTMLSlLearningCenterElement;
+    'sl-course': HTMLSlCourseElement;
+    'sl-courses': HTMLSlCoursesElement;
+    'sl-welcome': HTMLSlWelcomeElement;
+    'sl-app': HTMLSlAppElement;
+    'sl-storefront': HTMLSlStorefrontElement;
   }
 
 
