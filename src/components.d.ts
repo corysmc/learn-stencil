@@ -28,6 +28,9 @@ export namespace Components {
   interface SlWelcome {}
   interface SlWelcomeAttributes extends StencilHTMLAttributes {}
 
+  interface SlSignIn {}
+  interface SlSignInAttributes extends StencilHTMLAttributes {}
+
   interface SlApp {}
   interface SlAppAttributes extends StencilHTMLAttributes {}
 
@@ -41,6 +44,7 @@ declare global {
     'SlCourse': Components.SlCourse;
     'SlCourses': Components.SlCourses;
     'SlWelcome': Components.SlWelcome;
+    'SlSignIn': Components.SlSignIn;
     'SlApp': Components.SlApp;
     'SlStorefront': Components.SlStorefront;
   }
@@ -50,6 +54,7 @@ declare global {
     'sl-course': Components.SlCourseAttributes;
     'sl-courses': Components.SlCoursesAttributes;
     'sl-welcome': Components.SlWelcomeAttributes;
+    'sl-sign-in': Components.SlSignInAttributes;
     'sl-app': Components.SlAppAttributes;
     'sl-storefront': Components.SlStorefrontAttributes;
   }
@@ -79,6 +84,12 @@ declare global {
     new (): HTMLSlWelcomeElement;
   };
 
+  interface HTMLSlSignInElement extends Components.SlSignIn, HTMLStencilElement {}
+  var HTMLSlSignInElement: {
+    prototype: HTMLSlSignInElement;
+    new (): HTMLSlSignInElement;
+  };
+
   interface HTMLSlAppElement extends Components.SlApp, HTMLStencilElement {}
   var HTMLSlAppElement: {
     prototype: HTMLSlAppElement;
@@ -96,6 +107,7 @@ declare global {
     'sl-course': HTMLSlCourseElement
     'sl-courses': HTMLSlCoursesElement
     'sl-welcome': HTMLSlWelcomeElement
+    'sl-sign-in': HTMLSlSignInElement
     'sl-app': HTMLSlAppElement
     'sl-storefront': HTMLSlStorefrontElement
   }
@@ -105,6 +117,7 @@ declare global {
     'sl-course': HTMLSlCourseElement;
     'sl-courses': HTMLSlCoursesElement;
     'sl-welcome': HTMLSlWelcomeElement;
+    'sl-sign-in': HTMLSlSignInElement;
     'sl-app': HTMLSlAppElement;
     'sl-storefront': HTMLSlStorefrontElement;
   }

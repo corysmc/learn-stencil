@@ -9,6 +9,7 @@ export class Welcome {
     return (
       <div>
         <h1>Welcome to Learn StencilJS!</h1>
+        <sl-sign-in />
         <ion-button href="/courses">Learning Center</ion-button>
       </div>
     );
